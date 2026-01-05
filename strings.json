@@ -1,0 +1,73 @@
+{
+  "title": "Door/Window Advisor",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure door/window advisor",
+        "description": "Select entity type and sensors.",
+        "data": {
+          "name": "Name",
+          "entity_type": "Entity Type",
+          "indoor_temp": "Indoor temperature sensor",
+          "outdoor_temp": "Outdoor temperature sensor",
+          "indoor_hum": "Indoor humidity sensor",
+          "outdoor_hum": "Outdoor humidity sensor",
+          "contact": "Contact sensor (door/window)",
+          "wind_speed": "Wind speed sensor (optional)",
+          "target_temp": "Target temperature (°C)",
+          "target_hum": "Target humidity (%)",
+          "tol_temp": "Temperature tolerance (°C)",
+          "tol_hum": "Humidity tolerance (%)",
+          "state_open": "State for OPEN (default: ABRIR)",
+          "state_close": "State for CLOSE (default: FECHAR)",
+          "state_keep": "State for KEEP (default: MANTER)"
+        }
+      }
+    },
+    "error": {},
+    "abort": {
+      "already_configured": "This instance is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Door/Window Advisor options",
+        "description": "Adjust entity type, sensors, and comfort targets.",
+        "data": {
+          "entity_type": "Entity Type",
+          "indoor_temp": "Indoor temperature sensor",
+          "outdoor_temp": "Outdoor temperature sensor",
+          "indoor_hum": "Indoor humidity sensor",
+          "outdoor_hum": "Outdoor humidity sensor",
+          "contact": "Contact sensor (door/window)",
+          "wind_speed": "Wind speed sensor (optional)",
+          "target_temp": "Target temperature (°C)",
+          "target_hum": "Target humidity (%)",
+          "tol_temp": "Temperature tolerance (°C)",
+          "tol_hum": "Humidity tolerance (%)",
+          "state_open": "State for OPEN",
+          "state_close": "State for CLOSE",
+          "state_keep": "State for KEEP"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor_suffix": "Advice"
+  },
+  "reasons": {
+    "reason_insufficient_indoor_data": "Insufficient indoor data",
+    "reason_comfortable_conditions": "Comfortable conditions",
+    "reason_insufficient_outdoor_data": "Insufficient outdoor data",
+    "reason_strong_wind": "Strong wind detected",
+    "reason_already_open_hot": "Already open, allowing hot and humid air to exit",
+    "reason_open_hot": "Open to let hot and humid air exit",
+    "reason_close_hotter": "Close to avoid even hotter air entering",
+    "reason_keep_hot": "Keep closed to avoid hotter air entering",
+    "reason_already_open_warm": "Already open, allowing warmer air to enter",
+    "reason_open_warm": "Open to let warmer air enter",
+    "reason_close_cold": "Close to conserve indoor heat",
+    "reason_keep_cold": "Keep closed to conserve indoor heat"
+  }
+}

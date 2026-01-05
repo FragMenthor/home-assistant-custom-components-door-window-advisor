@@ -1,0 +1,73 @@
+{
+  "title": "Conselheiro de Porta/Janela",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurar conselheiro de porta/janela",
+        "description": "Selecione o tipo de entidade e os sensores.",
+        "data": {
+          "name": "Nome",
+          "entity_type": "Tipo de Entidade",
+          "indoor_temp": "Sensor de temperatura interior",
+          "outdoor_temp": "Sensor de temperatura exterior",
+          "indoor_hum": "Sensor de humidade interior",
+          "outdoor_hum": "Sensor de humidade exterior",
+          "contact": "Sensor de contacto (porta/janela)",
+          "wind_speed": "Sensor de velocidade do vento (opcional)",
+          "target_temp": "Temperatura alvo (°C)",
+          "target_hum": "Humidade alvo (%)",
+          "tol_temp": "Tolerância de temperatura (°C)",
+          "tol_hum": "Tolerância de humidade (%)",
+          "state_open": "Estado para ABRIR (padrão: ABRIR)",
+          "state_close": "Estado para FECHAR (padrão: FECHAR)",
+          "state_keep": "Estado para MANTER (padrão: MANTER)"
+        }
+      }
+    },
+    "error": {},
+    "abort": {
+      "already_configured": "Esta instância já está configurada"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opções do Conselheiro de Porta/Janela",
+        "description": "Ajuste o tipo de entidade, sensores e parâmetros de conforto.",
+        "data": {
+          "entity_type": "Tipo de Entidade",
+          "indoor_temp": "Sensor de temperatura interior",
+          "outdoor_temp": "Sensor de temperatura exterior",
+          "indoor_hum": "Sensor de humidade interior",
+          "outdoor_hum": "Sensor de humidade exterior",
+          "contact": "Sensor de contacto (porta/janela)",
+          "wind_speed": "Sensor de velocidade do vento (opcional)",
+          "target_temp": "Temperatura alvo (°C)",
+          "target_hum": "Humidade alvo (%)",
+          "tol_temp": "Tolerância de temperatura (°C)",
+          "tol_hum": "Tolerância de humidade (%)",
+          "state_open": "Estado para ABRIR",
+          "state_close": "Estado para FECHAR",
+          "state_keep": "Estado para MANTER"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor_suffix": "Conselho"
+  },
+  "reasons": {
+    "reason_insufficient_indoor_data": "Dados interiores insuficientes",
+    "reason_comfortable_conditions": "Condições confortáveis",
+    "reason_insufficient_outdoor_data": "Dados exteriores insuficientes",
+    "reason_strong_wind": "Vento forte detectado",
+    "reason_already_open_hot": "Já está aberta permitindo saída do ar quente e húmido",
+    "reason_open_hot": "Abrir para deixar sair o ar quente e húmido",
+    "reason_close_hotter": "Fechar para evitar entrada de ar ainda mais quente",
+    "reason_keep_hot": "Manter fechada para evitar entrada de ar mais quente",
+    "reason_already_open_warm": "Já está aberta permitindo entrada do ar mais quente",
+    "reason_open_warm": "Abrir para deixar entrar o ar mais quente",
+    "reason_close_cold": "Fechar para conservar o calor interior",
+    "reason_keep_cold": "Manter fechada para conservar o calor interior"
+  }
+}

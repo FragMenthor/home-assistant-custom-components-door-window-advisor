@@ -1,0 +1,14 @@
+{
+  "domain": "door_window_advisor",
+  "name": "Door/Window Advisor",
+  "codeowners": [
+    "@FragMenthor"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/FragMenthor/door_window_advisor",
+  "iot_class": "calculated",
+  "requirements": [],
+  "version": "1.2.0",
+  "icon": "icon.png",
+  "logo": "logo.png"
+}
