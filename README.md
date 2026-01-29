@@ -1,6 +1,4 @@
-# 📦 Door/Window Advisor v1.2.0 - INTEGRAÇÃO COMPLETA
-
-## ✨ NOVIDADES v1.2.0
+# 📦 Door/Window Advisor v1.2.0
 
 ✅ **Entity ID Personalizado** - `sensor.advice_[slug_do_nome]`
    - "Porta Cozinha" → `sensor.advice_porta_cozinha`
